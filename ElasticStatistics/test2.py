@@ -1,13 +1,14 @@
+from pandas import DataFrame
 import matplotlib.pyplot as plt
+import numpy as np
 
-fig = plt.figure()
+a=np.array([[4,8,5,7,6],[2,3,4,2,6],[4,7,4,7,8],[2,6,4,8,6],[2,4,3,3,2]])
+df=DataFrame(a, columns=['a','b','c','d','e'], index=[2,4,6,8,10])
 
-ax_1 = fig.add_subplot(2, 1, 1)
-ax_2 = fig.add_subplot(2, 1, 2)
-
-
-ax_1.set(title = 'ax_1', xticks=[], yticks=[])
-ax_2.set(title = 'ax_2', xticks=[], yticks=[])
-
+df.plot(kind='bar')
+# Turn on the grid
+plt.minorticks_on()
+plt.grid(which='major', linestyle='-', linewidth='0.5', color='green')
+plt.grid(which='minor', linestyle=':', linewidth='0.5', color='black')
 
 plt.show()
