@@ -15,6 +15,6 @@ if __name__ == '__main__':
     # day_count = (end_date - start_date).days + 1
     logging.basicConfig(level=logging.ERROR)
     es=connect_elasticsearch()
-    es.indices.delete(index='*202007*', ignore=[400, 404])
+    es.indices.delete(index='*202006*', ignore=[400, 404])
 
     # data.to_csv('out.csv')
