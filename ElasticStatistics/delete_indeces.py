@@ -1,6 +1,8 @@
 import logging
 from elasticsearch import Elasticsearch
 
+# удаляет индексы
+
 def connect_elasticsearch():
     _es = None
     _es = Elasticsearch([{'host': '10.0.2.29', 'port': 9200}])

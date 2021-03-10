@@ -5,7 +5,7 @@ import matplotlib.ticker as ticker
 import pandas as pd
 import datetime
 
-
+# выводит статистику из csv файлов полученных из процедур get_statistic
 
 def test():
     start_date, end_date = datetime.date(2020, 10, 1), datetime.date(2020, 10, 31)
@@ -29,7 +29,7 @@ def test():
                    # width=4,  # Ширина делений
                    # color='m',  # Цвет делений
                    # pad=10,  # Расстояние между черточкой и ее подписью
-                   labelsize=8,  # Размер подписи
+                   labelsize=5,  # Размер подписи
                    # labelcolor='r',  # Цвет подписи
                    # bottom=True,  # Рисуем метки снизу
                    # top=True,  # сверху
@@ -37,9 +37,9 @@ def test():
                    # right=True,  # и справа
                    # labelbottom=True,  # Рисуем подписи снизу
                    # labeltop=True,  # сверху
-                   # labelleft=True,  # слева
+                    labelleft=True,  # слева
                    # labelright=True,  # и справа
-                   labelrotation=90)  # Поворот подписей
+                   labelrotation=45)  # Поворот подписей
 
     # ax_1.set_title('Размер индексов по дням')
     ax_1.set_title('Размер индексов')

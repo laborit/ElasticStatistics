@@ -6,6 +6,8 @@ import logging
 import datetime
 from elasticsearch import Elasticsearch
 
+# Получает статистику по индексам из elasticsearch, сохраняет в csv
+
 def es_data(indeces_list):
     data_raw = []
 

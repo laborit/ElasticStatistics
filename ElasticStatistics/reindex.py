@@ -2,22 +2,36 @@ from elasticsearch import Elasticsearch
 
 def es_data():
 
-    es_answer = es.indices.get_mapping(index='1cchangelog_документ_заявкапокупателя_20210105')
-
-
-    Mapping=es_answer
+    Mapping = es.indices.get_mapping(index='1cchangelog_документ_заявкапокупателя_20210105')
 
 
 
-    # Mapping['1cchangelog_документ_заявкапокупателя_20210105']['mappings']['properties']['index'] = "false"
-    Mapping['1cchangelog_документ_заявкапокупателя_20210105']['mappings']['properties']['СсылкаНаОбъект']['index'] = "true"
-    print(Mapping)
+    # Mapping['1cchangelog_документ_заявкапокупателя_20210105']['mappings']['_source']= {"enabled":"false"} - отключаем _source
 
-    # es_answer = es.indices.create('nest', body=Mapping['1cchangelog_документ_заявкапокупателя_20210105'])
 
-    es_answer = es.indices.put_mapping(Mapping['1cchangelog_документ_заявкапокупателя_20210105'],index='1cchangelog_документ_заявкапокупателя_20210105')
+    for field in Mapping['1cchangelog_документ_заявкапокупателя_20210105']['mappings']['properties']:
+        if field=='СсылкаНаОбъект' or field=='Компьютер' or field=='Пользователь' or field=='Период':
+            Mapping['1cchangelog_документ_заявкапокупателя_20210105']['mappings']['properties'][field][
+                'index'] = "true"
+        else:
+            for field2 in Mapping['1cchangelog_документ_заявкапокупателя_20210105']['mappings']['properties'][field]:
+                if field2=='properties':
+                    for field3 in Mapping['1cchangelog_документ_заявкапокупателя_20210105']['mappings']['properties'][field]['properties']:
+                        Mapping['1cchangelog_документ_заявкапокупателя_20210105']['mappings']['properties'][field][field2][field3][
+                            'index'] = "false"
 
-    return es_answer
+                else:
+                    Mapping['1cchangelog_документ_заявкапокупателя_20210105']['mappings']['properties'][field][
+                        'index'] = "false"
+                    break
+
+    es.indices.create(index='1cchangelog_документ_заявкапокупателя_20210105_test2', body=Mapping['1cchangelog_документ_заявкапокупателя_20210105'])
+    es.reindex({
+        "source": {"index": "1cchangelog_документ_заявкапокупателя_20210105"},
+        "dest": {"index": "1cchangelog_документ_заявкапокупателя_20210105_test2"}
+    })
+
+    return Mapping
 
 
 def connect_elasticsearch():
@@ -29,7 +43,7 @@ if __name__ == '__main__':
     es=connect_elasticsearch()
     data = es_data()
     print(data)
-    # data.to_csv('out.csv')
+
 
 
 

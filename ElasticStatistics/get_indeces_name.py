@@ -6,6 +6,8 @@ import logging
 # import datetime
 from elasticsearch import Elasticsearch
 
+# Получает список индексов из elasticsearch сохраняет в indeces_name.txt
+
 def es_data():
     indeces_list = []
     indeces_name=open('indeces_name.txt', 'w',encoding='utf-8')
@@ -22,6 +24,7 @@ def es_data():
             key=key[:-9]
         if indeces_list.count(key) ==0:
             indeces_list.append(key)
+
 
     # except:
     #     data_raw = data_raw.loc([date,0,0], ignore_index=True)
@@ -41,7 +44,7 @@ def es_data():
 
 def connect_elasticsearch():
     _es = None
-    _es = Elasticsearch([{'host': '10.0.2.29', 'port': 9200}])
+    _es = Elasticsearch([{'host': '10.0.2.29', 'port': 9200}], timeout=30)
     # if _es.ping():
     #     print('Yay Connect')
     # else:
@@ -49,12 +52,10 @@ def connect_elasticsearch():
     return _es
 
 if __name__ == '__main__':
-    # start_date, end_date = datetime.date(2020,7, 1), datetime.date.today()
-    # day_count = (end_date - start_date).days + 1
     logging.basicConfig(level=logging.ERROR)
     es=connect_elasticsearch()
     data = es_data()
-    # data.to_csv('out.csv')
+
 
 
 
