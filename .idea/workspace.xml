@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bdffb58-59c2-4f53-9a65-42b0a207eb15" name="Default Changelist" comment="17_01_21">
-      <change afterPath="$PROJECT_DIR$/ElasticStatistics/reindex_mo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticStatistics/delete_indeces.py" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/delete_indeces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticStatistics/get_indeces_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/get_indeces_name.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticStatistics/get_statistics_to_csv(from date).py" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/get_statistics_to_csv(from date).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticStatistics/get_statistics_to_csv(from indeces).py" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/get_statistics_to_csv(from indeces).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticStatistics/indeces_name.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/indeces_name.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticStatistics/reindex.py" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/reindex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticStatistics/show_statistic_in_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/show_statistic_in_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticStatistics/statistics_on_indeces.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/statistics_on_indeces.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElasticStatistics/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +37,7 @@
       <recent name="C:\Features\PycharmProgect\ElasticStatistics" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.reindex_mo">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="get_indeces_name (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,19 +59,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_statistics_to_csv(from indeces)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Features\PycharmProgect\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Сергей\AppData\Local\Programs\Python\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ElasticStatistics" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ElasticStatistics/get_statistics_to_csv(from indeces).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ElasticStatistics/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,19 +143,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="show_statistic_in_csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Features\PycharmProgect\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Сергей\AppData\Local\Programs\Python\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ElasticStatistics" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="C:\Features\PycharmProgect\ElasticStatistics\show_statistic_in_csv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ElasticStatistics/test2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,20 +165,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.get_indeces_name (1)" />
-      <item itemvalue="Python.get_statistics_to_csv(from indeces)" />
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.main" />
       <item itemvalue="Python.reindex" />
-      <item itemvalue="Python.show_statistic_in_csv" />
       <item itemvalue="Python.reindex_mo" />
+      <item itemvalue="Python.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.test2" />
         <item itemvalue="Python.reindex_mo" />
         <item itemvalue="Python.get_indeces_name (1)" />
         <item itemvalue="Python.reindex" />
-        <item itemvalue="Python.show_statistic_in_csv" />
-        <item itemvalue="Python.get_statistics_to_csv(from indeces)" />
       </list>
     </recent_temporary>
   </component>
