@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bdffb58-59c2-4f53-9a65-42b0a207eb15" name="Default Changelist" comment="17_01_21">
+      <change beforePath="$PROJECT_DIR$/.idea/ElasticStatistics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ElasticStatistics.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElasticStatistics/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElasticStatistics/delete_indeces.py" beforeDir="false" afterPath="$PROJECT_DIR$/ElasticStatistics/delete_indeces.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +31,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ElasticStatistics" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -37,7 +40,28 @@
       <recent name="C:\Features\PycharmProgect\ElasticStatistics" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.delete_indeces">
+    <configuration name="delete_indeces" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ElasticStatistics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ElasticStatistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ElasticStatistics/delete_indeces.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="get_indeces_name (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,27 +125,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="reindex" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Features\PycharmProgect\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ElasticStatistics" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ElasticStatistics/reindex.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="reindex_mo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -165,20 +168,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.delete_indeces" />
       <item itemvalue="Python.get_indeces_name (1)" />
       <item itemvalue="Python.main (1)" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.reindex" />
       <item itemvalue="Python.reindex_mo" />
       <item itemvalue="Python.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.delete_indeces" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.test2" />
         <item itemvalue="Python.reindex_mo" />
         <item itemvalue="Python.get_indeces_name (1)" />
-        <item itemvalue="Python.reindex" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610909358509</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="18.03.2021">
+      <created>1616065060411</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616065060411</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +232,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="17_01_21" />
-    <option name="LAST_COMMIT_MESSAGE" value="17_01_21" />
+    <MESSAGE value="18.03.2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="18.03.2021" />
   </component>
 </project>
